@@ -13,7 +13,7 @@
   <body id="home" data-spy="scroll" data-target=".navbar">
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-custom py-0">
+    <nav class="navbar navbar-expand-lg navbar-custom py-0 fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand my-0 py-0" href="#">
           <img class="img-fluid" src="img/labb-logo.png" width="350px" height="250px" alt="" loading="lazy">
@@ -24,22 +24,52 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav d-flex ml-auto">
             <li class="nav-item">
-              <a class="nav-link text-nowrap" href="#home">Hi I'm Liam</a>
+              <a class="nav-link text-nowrap" href="#carousel">Hey That's Me!</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#carousel">Hey That's Me!</a>
+              <a class="nav-link text-nowrap" href="#bio">Hi I'm Liam</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#ageCalc">I Am This Many</a>
+              <a class="nav-link text-nowrap" href="#ageCalc">I Am This Many</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Mommy Says</a>
+              <a class="nav-link text-nowrap" href="#letters">Mommy Says</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- /navbar -->
+
+    <div id="main-heading">
+          <h1>Hey That's Me!</h1>
+    </div>
+    <!-- img carousel -->
+    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <img src="img/liam-towel.jpg" class="img-fluid d-block mx-auto carPic" alt="...">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img src="img/liam-tarheel.jpg" class="img-fluid d-block mx-auto carPic" alt="...">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img src="img/liam-watermelon.jpg" class="img-fluid d-block mx-auto carPic" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /img carousel -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
