@@ -1,6 +1,6 @@
 /* Base Styles */
 body {
-    background-color: #99c3ff;
+    position: relative;
 }
 
 #main-heading {
@@ -27,6 +27,10 @@ body {
     font-family: cursive;
 }
 
+.nav-link:hover {
+    color: white;
+}
+
 .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(153,195,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
@@ -39,20 +43,114 @@ body {
     justify-content: space-around;
 }
 
+/* Image Carousel Styles */
+
 .carPic {
     max-width: 100%;
-    max-height: 400px;
+    max-height: 300px;
     border: 5px solid #041630;
-    border-radius: 50%;
+    border-radius: 5%;
     padding: 2px;
 }
 
+.carousel-control-prev-icon {
+    height: 25px;
+    width: 15px;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23041630' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    height: 25px;
+    width: 15px;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23041630' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/* Main Content Styles */
+
+
+/* Age Calculator Styles */
+#calcContainer {
+    border-right: 1px solid #041630;
+}
+
+#ageCalc {
+    background-color: #99c3ff;
+    color: #041630;
+    text-align: center;
+    font-family: cursive;
+    border: 2px solid #041630;
+}
+
+#ageButton {
+    background-color: #041630;
+    color: white;
+}
+
+#ageButton:hover {
+    background-color: slategray;
+    color: #041630;
+}
+
+#ageCalc h2 {
+    text-decoration: underline;
+}
+
+
+/* Bio Section Styles */
+.bio {
+    background-color: yellow;
+}
+
+.letter {
+    background-color: tomato;
+}
 
 
 /* Media Queries */
 @media (min-width: 992px) {
-    .navbar li {
+    .nav-item {
         margin-left: 10px;
         margin-right: 10px;
     }
+
+    .carPic {
+        max-height: 500px;
+    }
 }
+
+@media (min-width: 575px) {
+
+    .carousel-control-prev-icon {
+        height: 75px;
+        width: 65px;
+    }
+
+    .carousel-control-next-icon {
+        height: 75px;
+        width: 65px;
+    }
+}
+
+@media (min-width: 400px) {
+    #main-logo {
+        width: 250px;
+        height: 150px;
+    }
+
+    #main-heading {
+        margin-top: 150px;
+    }
+}
+
+@media (max-width: 399px) {
+
+    #main-logo {
+        height: 100px;
+        width: 150px;
+    }
+
+    .carPic {
+        max-width: 240px;
+    }
+}
+

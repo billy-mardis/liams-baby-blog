@@ -10,32 +10,24 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Liam's Baby Blog</title>
   </head>
-  <body id="home" data-spy="scroll" data-target=".navbar">
+  <body data-spy="scroll" data-target=".navbar">
 
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-custom py-0 fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand my-0 py-0" href="#">
-          <img class="img-fluid" src="img/labb-logo.png" width="350px" height="250px" alt="" loading="lazy">
+        <a class="navbar-brand ml-0 my-0 py-0" href="#">
+          <img id="main-logo" class="img-fluid" src="img/labb-logo.png" width="350px" height="250px" alt="Main Logo" loading="lazy">
         </a>
         <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav d-flex ml-auto">
-            <li class="nav-item">
-              <a class="nav-link text-nowrap" href="#carousel">Hey That's Me!</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-nowrap" href="#bio">Hi I'm Liam</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-nowrap" href="#ageCalc">I Am This Many</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-nowrap" href="#letters">Mommy Says</a>
-            </li>
-          </ul>
+          <div class="navbar-nav d-flex ml-auto">
+              <a class="nav-item nav-link text-nowrap" href="#carousel">Hey That's Me!</a>
+              <a class="nav-item nav-link text-nowrap" href="#bio">Hi I'm Liam</a>
+              <a class="nav-item nav-link text-nowrap" href="#ageCalc">I Am This Many</a>
+              <a class="nav-item nav-link text-nowrap" href="#letters">Mommy Says</a>
+          </div>
         </div>
       </div>
     </nav>
@@ -45,31 +37,56 @@
           <h1>Hey That's Me!</h1>
     </div>
     <!-- img carousel -->
-    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <div id="carousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
       </ol>
-      <div class="carousel-inner">
+      <div class="carousel-inner container">
         <div class="carousel-item active">
-          <div class="container">
-            <img src="img/liam-towel.jpg" class="img-fluid d-block mx-auto carPic" alt="...">
-          </div>
+          <img src="img/liam-towel.jpg" class="img-fluid d-block mx-auto carPic" alt="...">
         </div>
         <div class="carousel-item">
-          <div class="container">
-            <img src="img/liam-tarheel.jpg" class="img-fluid d-block mx-auto carPic" alt="...">
-          </div>
+          <img src="img/liam-tarheel.jpg" class="img-fluid d-block mx-auto carPic" alt="...">
         </div>
         <div class="carousel-item">
-          <div class="container">
-            <img src="img/liam-watermelon.jpg" class="img-fluid d-block mx-auto carPic" alt="...">
-          </div>
+          <img src="img/liam-watermelon.jpg" class="img-fluid d-block mx-auto carPic" alt="...">
         </div>
       </div>
+      <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /img carousel -->
+
+    <!-- main content -->
+    <div id="main-content" class="container-fluid pt-4">
+      <div class="row">
+        <div id="bio" class="col-12 col-sm-12 col-md-12 col-lg-6 order-lg-2 bio">
+          Liam's Bio Goes Here
+        </div>
+
+        <div id="calcContainer" class="col-12 col-sm-6 col-md-6 col-lg-3 order-lg-1">
+          <div id="ageCalc" class="container mx-auto my-3">
+            <h2><strong>I Am This Many</strong></h2>
+            <h5>Press The Button</h5>
+            <h5>To See How Old I Am</h5>
+            <h5>Right Now!</h5>
+            <button type="button" id="ageButton" class="btn btn-lg my-3">Click Here</button>
+          </div>
+        </div>
+
+        <div id="letters" class="col-12 col-sm-6 col-md-6 col-lg-3 order-lg-3 letter">
+          McKae's Letter Goes Here
+        </div>
+      </div>
+
     </div>
-    <!-- /img carousel -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -82,5 +99,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" 
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" 
     crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
