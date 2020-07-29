@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Liam's Baby Blog</title>
   </head>
@@ -23,10 +24,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <div class="navbar-nav d-flex ml-auto">
-              <a class="nav-item nav-link text-nowrap" href="#carousel">Hey That's Me!</a>
+              <a class="nav-item nav-link text-nowrap" href="#main-heading">Hey That's Me!</a>
               <a class="nav-item nav-link text-nowrap" href="#bio">Hi I'm Liam</a>
               <a class="nav-item nav-link text-nowrap" href="#ageCalc">I Am This Many</a>
-              <a class="nav-item nav-link text-nowrap" href="#letters">Mommy Says</a>
+              <a class="nav-item nav-link text-nowrap" href="#letter">Mommy Says</a>
           </div>
         </div>
       </div>
@@ -65,13 +66,27 @@
     </div><!-- /img carousel -->
 
     <!-- main content -->
-    <div id="main-content" class="container-fluid pt-4">
+    <div id="main-content" class="container-fluid pt-4 mt-3">
       <div class="row">
-        <div id="bio" class="col-12 col-sm-12 col-md-12 col-lg-6 order-lg-2 bio">
-          Liam's Bio Goes Here
+        <div id="bioContainer" class="col-12 col-sm-6 col-md-6 col-lg-3 order-lg-1">
+          <div id="bio" class="container mx-auto my-3">
+            <h2 class="mb-3"><strong>Hi I'm Liam</strong></h2>
+            <h5><strong>Full Name:</strong></h5>
+            <p>Liam Asher Connelly</p>
+            <h5><strong>Date of Birth:</strong></h5>
+            <p>Wednesday, June 26, 2019</p>
+            <h5><strong>Time of Birth:</strong></h5>
+            <p>3:28 PM (Eastern Standard Time)</p>
+            <h5><strong>Place of Birth:</strong></h5>
+            <p>Norton Suburban Hospital, Louisville, KY</p>
+            <h5><strong>Weight at Birth:</strong></h5>
+            <p>5.57 pounds (89.12 ounces)</p>
+            <h5><strong>Length at Birth:</strong></h5>
+            <p>16 inches</p>
+          </div>
         </div>
 
-        <div id="calcContainer" class="col-12 col-sm-6 col-md-6 col-lg-3 order-lg-1">
+        <div id="calcContainer" class="col-12 col-sm-6 col-md-6 col-lg-3 order-lg-3">
           <div id="ageCalc" class="container mx-auto my-3">
             <h2><strong>I Am This Many</strong></h2>
             <h5>Press The Button</h5>
@@ -81,8 +96,31 @@
           </div>
         </div>
 
-        <div id="letters" class="col-12 col-sm-6 col-md-6 col-lg-3 order-lg-3 letter">
-          McKae's Letter Goes Here
+        <div id="letterContainer" class="col-12 col-sm-12 col-md-12 col-lg-6 mt-md-3 mt-lg-0 order-lg-2">
+          <div id="letter" class="container mx-auto my-3">
+            <h2 class="mb-3"><strong>Mommy Says</strong></h2>
+            <span><em>To My Perfect Little Angel,</em></span><br><br>
+            <p><em>
+              I have so many things running through my mind that I want to tell you, that it is hard
+              to know where to start!  First of all I want to say thank you.  Thank you for bringing meaning to
+              my life.  Thank you for teaching me what it means to truly love someone.  Most of all thank you
+              for saving my life.
+            </em></p>
+            <p><em>
+              Since the moment I found out you were coming my life has never been the same.  I knew at that 
+              moment that nothing I said or did from that point was about me anymore.  That thought still
+              terrifies me, and at the same time makes me happier than anything in this world!  I have so many 
+              hopes and dreams for you.  There is not a second that goes by that I don't think about you, 
+              and wonder about the little boy and man you will become.
+            </em></p>
+            <p><em>
+              I have so much more to say, but we have all the time in the world.  This is just the first of many
+              letters that I can't (and can) wait for you to be big enough to read.  I am so proud to be your mother.  
+              I love you more than life itself, and want you to know that I will never leave your side.            
+            </em></p><br>
+            <span><em>Love Always,</em></span><br>
+            <span><em>Mommy</em></span>
+          </div>
         </div>
       </div>
 
@@ -90,15 +128,9 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
-    crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
-    crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" 
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" 
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

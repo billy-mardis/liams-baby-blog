@@ -1,4 +1,4 @@
-// Age Calculator Variables and formulas
+// Age Calculator Variables and Math Operations
 const liamsBdateTime = new Date("June 26 2019 16:28");
 const currentDateTime = new Date();
 const timeDifference = Math.abs(currentDateTime - liamsBdateTime);
@@ -13,7 +13,7 @@ const secondsDifference = Math.ceil(timeDifference / (1000));
 // Age Calculator Print Function
 $(document).ready(function(){
     $("#ageButton").click(function(){
-        $("#ageCalc").html(`<h5><strong>I was born</strong></h5>
+        $("#ageCalc").html(`<h5 class="pt-3"><strong>I was born</strong></h5>
         <h5><strong>Wednesday, June 26, 2019 at 3:28pm.</strong></h5>
         <h5><strong>Right now I am: </strong></h5>
         
@@ -27,3 +27,7 @@ $(document).ready(function(){
     });
 });
 
+// Auto Close the Navbar When Clicking a Link
+$('.navbar-collapse a').click(function(){
+    $(".navbar-collapse").collapse('hide');
+});

@@ -1,4 +1,8 @@
 /* Base Styles */
+html {
+    scroll-padding-top: 100px;
+}
+
 body {
     position: relative;
 }
@@ -69,16 +73,11 @@ body {
 
 
 /* Age Calculator Styles */
-#calcContainer {
-    border-right: 1px solid #041630;
-}
 
 #ageCalc {
-    background-color: #99c3ff;
     color: #041630;
     text-align: center;
     font-family: cursive;
-    border: 2px solid #041630;
 }
 
 #ageButton {
@@ -97,12 +96,30 @@ body {
 
 
 /* Bio Section Styles */
-.bio {
-    background-color: yellow;
+
+#bio {
+    color: #041630;
+    text-align: center;
+    font-family: cursive;
 }
 
-.letter {
-    background-color: tomato;
+#bio h2 {
+    text-decoration: underline;
+}
+
+/* Letter Section Styles */
+
+#letter {
+    color: #041630;
+    font-family: serif;
+    text-align: center;
+    font-size: 1.25em;
+}
+
+#letter h2 {
+    text-align: center;
+    font-family: cursive;
+    text-decoration: underline;
 }
 
 
@@ -115,6 +132,14 @@ body {
 
     .carPic {
         max-height: 500px;
+    }
+
+    #letterContainer {
+        border-right: 2px solid #041630;
+    }
+
+    #bioContainer {
+        border-right: 2px solid #041630;
     }
 }
 
@@ -131,18 +156,7 @@ body {
     }
 }
 
-@media (min-width: 400px) {
-    #main-logo {
-        width: 250px;
-        height: 150px;
-    }
-
-    #main-heading {
-        margin-top: 150px;
-    }
-}
-
-@media (max-width: 399px) {
+@media (max-width: 450px) {
 
     #main-logo {
         height: 100px;
