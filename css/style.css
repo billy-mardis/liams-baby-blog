@@ -15,7 +15,14 @@ body {
     text-align: center;
 }
 
+#footer {
+    background-color: #041630;
+    color: #99c3ff;
+}
+
+
 /* Custom Navbar Styles */
+
 .navbar-custom { 
     background-color: #041630; 
 } 
@@ -47,6 +54,7 @@ body {
     justify-content: space-around;
 }
 
+
 /* Image Carousel Styles */
 
 .carPic {
@@ -68,6 +76,19 @@ body {
     width: 15px;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23041630' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
+
+.carousel-indicators li {
+    background-color: #041630;
+    background-color: rgba(4, 22, 48, .90);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+.carousel-indicators li .active {
+    background-color: #041630;
+}
+
 
 /* Main Content Styles */
 
@@ -106,6 +127,7 @@ body {
 #bio h2 {
     text-decoration: underline;
 }
+
 
 /* Letter Section Styles */
 
@@ -153,6 +175,14 @@ body {
     .carousel-control-next-icon {
         height: 75px;
         width: 65px;
+    }
+}
+
+@media (min-width: 400px) {
+    
+    .carousel-indicators li {
+        width: 15px;
+        height: 15px;
     }
 }
 
